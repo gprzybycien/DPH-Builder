@@ -1,0 +1,24 @@
+data_product:
+  id: customer_360_uk
+  name: Customer 360 UK
+  domain: customer
+  market: UK
+  platform: GCP
+contract_template_id: customer360-market-template-v1
+required_fields:
+- customer_id
+- country_code
+- consent_status
+sla:
+  freshness: 2h
+  availability: 99.5%
+privacy_defaults:
+  mask_fields:
+  - email
+  - phone
+  residency: in-market
+  consent_required_for_activation: true
+source_assets:
+- bq.customer_master
+- bq.customer_interactions
+- bq.customer_preferences
