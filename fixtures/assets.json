@@ -1,0 +1,46 @@
+{
+  "container": "gcp/customer-domain",
+  "assets": [
+    {
+      "asset_id": "bq.customer_master",
+      "type": "bigquery_table",
+      "market": "UK",
+      "project": "cust-prd-uk",
+      "dataset": "gold",
+      "table": "customer_master",
+      "owner": "customer_platform",
+      "tags": [
+        "customer",
+        "gold",
+        "pii"
+      ]
+    },
+    {
+      "asset_id": "bq.customer_interactions",
+      "type": "bigquery_table",
+      "market": "UK",
+      "project": "cust-prd-uk",
+      "dataset": "silver",
+      "table": "customer_interactions",
+      "owner": "engagement_team",
+      "tags": [
+        "customer",
+        "events"
+      ]
+    },
+    {
+      "asset_id": "bq.customer_preferences",
+      "type": "bigquery_table",
+      "market": "UK",
+      "project": "cust-prd-uk",
+      "dataset": "silver",
+      "table": "customer_preferences",
+      "owner": "crm_team",
+      "tags": [
+        "customer",
+        "preferences",
+        "pii"
+      ]
+    }
+  ]
+}

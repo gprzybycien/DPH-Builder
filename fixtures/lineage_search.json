@@ -1,0 +1,20 @@
+{
+  "search_term": "customer 360 uk",
+  "matches": [
+    {
+      "lineage_asset_id": "lin.customer_master",
+      "asset_id": "bq.customer_master",
+      "confidence": 0.96
+    },
+    {
+      "lineage_asset_id": "lin.customer_interactions",
+      "asset_id": "bq.customer_interactions",
+      "confidence": 0.91
+    },
+    {
+      "lineage_asset_id": "lin.customer_preferences",
+      "asset_id": "bq.customer_preferences",
+      "confidence": 0.88
+    }
+  ]
+}

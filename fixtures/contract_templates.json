@@ -1,0 +1,26 @@
+{
+  "templates": [
+    {
+      "template_id": "customer360-market-template-v1",
+      "domain": "customer",
+      "market_scope": "country",
+      "required_fields": [
+        "customer_id",
+        "country_code",
+        "consent_status"
+      ],
+      "sla": {
+        "freshness": "2h",
+        "availability": "99.5%"
+      },
+      "privacy_defaults": {
+        "mask_fields": [
+          "email",
+          "phone"
+        ],
+        "residency": "in-market",
+        "consent_required_for_activation": true
+      }
+    }
+  ]
+}

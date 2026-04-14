@@ -1,0 +1,15 @@
+{
+  "root": "bq.customer_master",
+  "upstream": [
+    "bq.raw_customer_profile",
+    "bq.raw_customer_consent"
+  ],
+  "downstream": [
+    "dashboard.customer_retention",
+    "ml.churn_features"
+  ],
+  "notes": [
+    "customer_master is a stable curated source",
+    "downstream retention dashboard is business-critical"
+  ]
+}
